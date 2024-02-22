@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home page</title>
+    {% load static %}
+     <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}">
+    <script src="{%  static 'js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>  WELCOME TO MY HOME PAGE</h1>
+
+<button class="btn btn-primary ms-auto"><a href="{% url 'form' %}"></a></button>
+<button class="btn btn-primary ms-auto"><a href="{% url 'table' %}"></a></button>
+
+
+<img src="{%  static 'images/back 3.jpeg' %}" alt="">
+<img src="{%  static 'images/boy.jpeg' %}" alt="">
+</body>
+
+<br>
+<h1 class ="heading 2">Services</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis doloribus ducimus, esse eum exercitationem id maxime non nulla omnis provident ratione repellendus unde ut, vel. Eaque ipsum itaque natus?</p>
+<img class="my image" src="{% static 'images/car 1.jpeg' %}" alt="">
+</html>
